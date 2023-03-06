@@ -15,10 +15,7 @@ resources:
       type: github
       name: AChumblerEpam/arm
       endpoint: github.com_AChumblerEpam
-
-jobs:
-- template: arm-pipelines.yml@templates
-
+      
 stages:
   - steps:
     - script: echo ARM says hello!
