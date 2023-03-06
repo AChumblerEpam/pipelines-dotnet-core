@@ -18,6 +18,7 @@ resources:
 
 stages:
 - stage: SayHello
-  - script: echo ARM says hello!
+  - steps:
+    - script: echo ARM says hello!
       displayName: 'SayHelloARM'
-  - template: arm-pipelines.yml@templates
+- template: arm-pipelines.yml@templates
