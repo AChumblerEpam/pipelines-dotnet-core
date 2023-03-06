@@ -16,9 +16,7 @@ resources:
       name: AChumblerEpam/arm
       endpoint: github.com_AChumblerEpam
 
-stages:
-- stage: SayHello
-  - steps:
-    - script: echo ARM says hello!
-      displayName: 'Hello from main'
-    - template: arm-pipelines.yml@templates
+- steps:
+  - script: echo ARM says hello!
+    displayName: 'Hello from main'
+  - template: arm-pipelines.yml@templates
