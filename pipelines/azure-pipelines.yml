@@ -18,3 +18,9 @@ resources:
 
 jobs:
 - template: arm-pipelines.yml@templates
+
+stages:
+  - steps:
+    - script: echo ARM says hello!
+      displayName: 'SayHelloARM'
+  - template: arm-pipelines.yml@templates
