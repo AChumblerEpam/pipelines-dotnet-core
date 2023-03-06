@@ -14,7 +14,7 @@ resources:
     - repository: templates
       type: github
       name: AChumblerEpam/arm
-      endpoint: AChumblerEpam
+      endpoint: github.com_AChumblerEpam
 
 jobs:
 - template: arm-pipeline.yml@templates
